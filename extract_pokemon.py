@@ -84,3 +84,6 @@ def scrape_all_pokemon_details():
     for pokemon in data:
         get_pokemon_details(pokemon['url'], is_first_run)
         is_first_run = False
+
+if __name__ == "__main__":
+    scrape_pokemon_list()
